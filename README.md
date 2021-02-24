@@ -1,5 +1,5 @@
 # Comandos Git:
-- **Clonar**
+- **Clonar**  
 Desde la línea de comandos acceder al directorio donde se desea clonar el repositorio, ejemplo:  
 **cd** _Directorio/Destino_  
 Y clonar el repositorio como sigue:  
@@ -16,7 +16,7 @@ Con esto, TODOS los archivos con las extensiones asignadas serán tomados como _
   
   
 - **Actualizar repositorio**  
-Para los colaboradores, aceeder al direcorio donde se tiene el repositorio clonado y seguir los siguientes comandos:  
+Para los colaboradores, acceder al direcorio donde se tiene el repositorio clonado y seguir los siguientes comandos:  
 **git add** _Archivo o Directorio_ (con el modificador asterísco "*" en el lugar de Archivo o Directorio se agregan TODOS los archivos que hayan sufrido cambios)  
 **git commit -m** _"Breve mensaje de la actualización"_  
 **git branch -M main**  
