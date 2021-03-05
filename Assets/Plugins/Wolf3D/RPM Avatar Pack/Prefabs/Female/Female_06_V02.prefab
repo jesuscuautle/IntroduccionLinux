@@ -1806,6 +1806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5393697146511760290}
   - component: {fileID: 1657215268}
+  - component: {fileID: 2545747841829344672}
   m_Layer: 0
   m_Name: Female_06_V02
   m_TagString: Untagged
@@ -1856,6 +1857,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2545747841829344672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724718385666933016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60f7c14844f988409c1d5777c0e1343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    nombre: Trish
+    listaOraciones:
+    - "Mi nombre es Trish y para poder usar la maquina del tiempo, necesitas una
+      contrase\xF1a formada \npor 10 digitos."
+    - "Para obtener la contrase\xF1a necesitas contestar 3 preguntas, las respuestas
+      estan en el diario"
+    - "\xBFEn que a\xF1o se creo Linux?"
+    - "\xBFEn que lenguaje esta basado el sistema Linux?"
+    - "\xBFComo se llama el interprete de comandos interactivos de Linux?"
+    - 'Una vez que tengas las respuesta concatena las respuesta para formar la clave
+      XXXXXXXXXX. '
+  panelDialogos: {fileID: 0}
+  mostrarTexto: {fileID: 0}
+  velEscritura: 0.2
 --- !u!1 &4810952108025510760
 GameObject:
   m_ObjectHideFlags: 0

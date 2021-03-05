@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2300000}
   - component: {fileID: 8417241994397256282}
   - component: {fileID: 3644242479167145984}
+  - component: {fileID: 4634169475433038611}
   m_Layer: 0
   m_Name: book_0001d
   m_TagString: Untagged
@@ -111,3 +112,28 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300006, guid: 08e091500e68ded43b4abfb1b3f718d0, type: 3}
+--- !u!114 &4634169475433038611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7cb73bef62d6e4cb53b618ac7eba7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  book:
+    nombre: Intro
+    textoLibro:
+    - "Caracteristicas \nPrincipales desarrolladores:\r\n- Ken Thompson, Doug McIlory,
+      Joe Ossana\n- En 1978 se comenz\xF3 con las licencias del sistema\r\n"
+    - "Linux fue creado en base a la necesidad de contar con\r\nuna versi\xF3n de
+      un sistema operativo como UNIX"
+    - dos
+    - '"Esta incompleto...."'
+  panelTexto: {fileID: 0}
+  panelIndicaciones: {fileID: 0}
+  mostrarTexto: {fileID: 0}
+  velTexto: 0.02

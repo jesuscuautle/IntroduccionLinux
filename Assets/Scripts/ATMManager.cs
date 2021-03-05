@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ATMManager : MonoBehaviour{
 
@@ -12,10 +13,18 @@ public class ATMManager : MonoBehaviour{
     public GameObject panelIndicaciones;
     public TextMeshProUGUI mostrarTexto;
     string textoActual;
+    string nombreEscena;
     public float velTexto;
+    string contraseña;
+    string contraseñaUsuario;
+    public Text signivel;
+    public GameObject Door_Left_01;
+    public GameObject Door_Left_02;
+    
 
     private void Start() {
         textos = new Queue<string>();
+        contraseña = "1978CUNIX";
     }
 
     void StartType(){
@@ -68,10 +77,20 @@ public class ATMManager : MonoBehaviour{
         }
     }
 
-    
-
     public void SalirButton(){
         panelATM.SetActive(false);
+        
     }
 
+
+
+   public void CambiarEscena(string nombreEscena)
+    {
+       contraseñaUsuario = signivel.text;
+       if (contraseñaUsuario == contraseña)
+       {
+           SceneManager.LoadScene(nombreEscena);
+       }
+       
+    }
 }
