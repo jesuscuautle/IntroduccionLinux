@@ -34,3 +34,9 @@ Videojuego para la UEA taller de introduccion a linux
 - Se agregó personaje para Quiz (queda pendiente la funcionalidad)
 - Se agregó escena de inicio de juego
 - Se agregó escena de nivel dos
+- Corrección de animación de disparo
+- Ampliación de mapa 2 para niveles 2 a 5
+
+### Tareas pendientes
+- Agregar daño recibido y daño causado a personajes
+- Agregar items _clave_ para niveles 2 y 3
