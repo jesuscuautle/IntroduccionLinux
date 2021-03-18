@@ -21,6 +21,10 @@ public class PlayerMovement : MonoBehaviour{
 
         animator.SetFloat("VelX", x);
         animator.SetFloat("VelY", y);
+
+        if(Input.GetMouseButton(0)){
+            animator.SetTrigger("Click");
+        }
         
     }
 }

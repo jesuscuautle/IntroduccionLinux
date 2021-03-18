@@ -5,7 +5,7 @@ using UnityEngine;
 public class bala : MonoBehaviour
 {
     private Rigidbody Myrb;
-    public float speed;
+    public float speed = 100;
     // Start is called before the first frame update
     void Start()
     {
