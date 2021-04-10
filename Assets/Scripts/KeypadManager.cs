@@ -9,24 +9,24 @@ public class KeypadManager : MonoBehaviour{
     public GameObject panelKeypad;
     public GameObject panelIndicaciones;
     public Input contraseñaUI;
-    public int velocidadRotacion = 100;
+    public float velocidadRotacion = 1f;
+
 
     private bool abrir = false;
     private string contraseña;
     private string contraseñaIngresada;
+    private float angulo;
+    private Vector3 direccion;
 
     private void Start(){
+        angulo = puerta.transform.eulerAngles.y;
         contraseña = "1"; //DEFINIR CONTRASEÑA
     }
 
     private void Update(){
         /*Aquí hay un error xd*/
-        if(abrir){
-            puerta.transform.RotateAround(puerta.transform.position, new Vector3(0, 1, 0), velocidadRotacion*Time.deltaTime);
-            if(puerta.transform.rotation.y == 110){
-                abrir = false;
-            }
-            
+        if(Mathf.Round(puerta.transform.eulerAngles.y) != angulo){
+            puerta.transform.Rotate(direccion*velocidadRotacion);
         }
     }
 
@@ -60,6 +60,8 @@ public class KeypadManager : MonoBehaviour{
         if(input == contraseña){
             panelKeypad.SetActive(false);
             abrir = true;
+            angulo = 90;
+            direccion = Vector3.up;
         }
     }
 

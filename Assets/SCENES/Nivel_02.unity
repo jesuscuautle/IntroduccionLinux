@@ -209,7 +209,7 @@ MonoBehaviour:
   puerta: {fileID: 1150589758}
   panelKeypad: {fileID: 1246108036}
   panelIndicaciones: {fileID: 351770666}
-  velocidadRotacion: 50
+  velocidadRotacion: 1
 --- !u!65 &16557419
 BoxCollider:
   m_ObjectHideFlags: 0
