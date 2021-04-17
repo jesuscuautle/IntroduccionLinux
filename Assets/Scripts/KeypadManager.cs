@@ -10,17 +10,15 @@ public class KeypadManager : MonoBehaviour{
     public GameObject panelIndicaciones;
     public Input contraseñaUI;
     public float velocidadRotacion = 1f;
-
+    public string contraseña;
 
     private bool abrir = false;
-    private string contraseña;
     private string contraseñaIngresada;
     private float angulo;
     private Vector3 direccion;
 
     private void Start(){
         angulo = puerta.transform.eulerAngles.y;
-        contraseña = "1"; //DEFINIR CONTRASEÑA
     }
 
     private void Update(){

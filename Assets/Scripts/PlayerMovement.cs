@@ -6,25 +6,32 @@ public class PlayerMovement : MonoBehaviour{
     
     public float runSpeed = 2;
     public float rotationSpeed = 90;
-
     public Animator animator;
 
     private float x, y;
+    private bool canMove = true;
 
     void Update(){
 
-        x = Input.GetAxis("Horizontal");
-        y = Input.GetAxis("Vertical");
+        if(canMove){
+            x = Input.GetAxis("Horizontal");
+            y = Input.GetAxis("Vertical");
 
-        transform.Rotate(0, x*Time.deltaTime*rotationSpeed, 0);
-        transform.Translate(0, 0, y*Time.deltaTime*runSpeed);
+            transform.Rotate(0, x*Time.deltaTime*rotationSpeed, 0);
+            transform.Translate(0, 0, y*Time.deltaTime*runSpeed);
 
-        animator.SetFloat("VelX", x);
-        animator.SetFloat("VelY", y);
+            animator.SetFloat("VelX", x);
+            animator.SetFloat("VelY", y);
 
-        if(Input.GetMouseButton(0)){
-            animator.SetTrigger("Click");
+            if(Input.GetMouseButton(0)){
+                animator.SetTrigger("Click");
+            }
         }
         
     }
+
+    public void setCanMove(bool canMove){
+        this.canMove = canMove;
+    }
+
 }

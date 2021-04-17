@@ -9,6 +9,7 @@ public class Contador : MonoBehaviour{
     public GameObject panelContador;
     public GameObject panelGameOver;
     public float tiempoInicial;
+
     private float tiempoIncremento;
 
     void Start(){
