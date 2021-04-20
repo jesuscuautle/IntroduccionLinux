@@ -21,7 +21,8 @@ public class AtaqueEnemigo : MonoBehaviour{
 
     void OnTriggerEnter(Collider collider){
 
-        if(collider.gameObject == player){
+        if (collider.CompareTag("Player"))
+        {
             inRange = true;
         }
 
@@ -29,7 +30,8 @@ public class AtaqueEnemigo : MonoBehaviour{
 
     void OnTriggerExit(Collider collider){
 
-        if(collider.gameObject == player){
+        if (collider.CompareTag("Player"))
+        {
             inRange = false;
         }
 
